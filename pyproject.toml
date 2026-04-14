@@ -14,4 +14,5 @@ dependencies = [
     "torch>=2.11.0",
     "torch-tb-profiler>=0.4.3",
     "torchvision>=0.26.0",
+    "tqdm>=4.67.3",
 ]
