@@ -12,6 +12,7 @@ dependencies = [
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
     "tensorboard>=2.20.0",
+    "tensorflow",
     "torch==2.0.1+cu118",
     "torch-tb-profiler>=0.4.3",
     "torchaudio==2.0.2+cu118",
