@@ -1,7 +1,6 @@
 .venv/
 data/
 logs/
-models/
 cifar_root/
 root/
 **/insect_data/
