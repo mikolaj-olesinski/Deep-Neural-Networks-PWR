@@ -11,14 +11,17 @@ dependencies = [
     "numpy>=1.24,<2",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
-    "tensorboard>=2.20.0",
-    "tensorflow",
+    "tensorboard==2.18.0",
+    "tensorflow==2.18.1",
     "torch==2.0.1+cu118",
     "torch-tb-profiler>=0.4.3",
     "torchaudio==2.0.2+cu118",
     "torchvision==0.15.2+cu118",
     "tqdm>=4.67.3",
 ]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
 
 [[tool.uv.index]]
 url = "https://download.pytorch.org/whl/cu118"
