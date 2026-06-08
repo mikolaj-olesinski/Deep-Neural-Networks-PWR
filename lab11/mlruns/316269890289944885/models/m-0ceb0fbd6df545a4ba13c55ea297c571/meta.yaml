@@ -1,0 +1,10 @@
+artifact_location: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab11/mlruns/316269890289944885/models/m-0ceb0fbd6df545a4ba13c55ea297c571/artifacts
+creation_timestamp: 1780699753894
+experiment_id: '316269890289944885'
+last_updated_timestamp: 1780699753923
+model_id: m-0ceb0fbd6df545a4ba13c55ea297c571
+model_type: null
+name: model
+source_run_id: 5d4e961012cb4c679f272ef506b3ab45
+status: 3
+status_message: null

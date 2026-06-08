@@ -1,0 +1,14 @@
+artifact_uri: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab11/mlruns/316269890289944885/25ac6f64b68f4744ba007ecd0cb47908/artifacts
+end_time: 1780782463816
+entry_point_name: ''
+experiment_id: '316269890289944885'
+lifecycle_stage: active
+run_id: 25ac6f64b68f4744ba007ecd0cb47908
+run_name: capable-auk-759
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780781049665
+status: 3
+tags: []
+user_id: mikol

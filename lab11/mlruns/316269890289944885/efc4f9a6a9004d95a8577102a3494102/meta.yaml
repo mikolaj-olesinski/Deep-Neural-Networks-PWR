@@ -1,0 +1,14 @@
+artifact_uri: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab11/mlruns/316269890289944885/efc4f9a6a9004d95a8577102a3494102/artifacts
+end_time: 1780814069356
+entry_point_name: ''
+experiment_id: '316269890289944885'
+lifecycle_stage: active
+run_id: efc4f9a6a9004d95a8577102a3494102
+run_name: exp4_Last2_GQA_seed123
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780812472408
+status: 3
+tags: []
+user_id: mikol

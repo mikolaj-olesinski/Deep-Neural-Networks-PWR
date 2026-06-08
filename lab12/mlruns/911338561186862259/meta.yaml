@@ -1,0 +1,9 @@
+artifact_location: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab12/mlruns/911338561186862259
+creation_time: 1780838226406
+effective_trace_archival_retention: null
+experiment_id: '911338561186862259'
+last_update_time: 1780838226406
+lifecycle_stage: active
+name: GQA_IMDB
+trace_location: null
+workspace: default

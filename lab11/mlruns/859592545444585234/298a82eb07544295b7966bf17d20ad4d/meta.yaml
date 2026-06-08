@@ -1,0 +1,14 @@
+artifact_uri: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab11/mlruns/859592545444585234/298a82eb07544295b7966bf17d20ad4d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '859592545444585234'
+lifecycle_stage: active
+run_id: 298a82eb07544295b7966bf17d20ad4d
+run_name: gentle-kite-456
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780821189609
+status: 1
+tags: []
+user_id: mikol
