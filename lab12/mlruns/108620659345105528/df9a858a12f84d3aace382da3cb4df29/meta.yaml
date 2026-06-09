@@ -1,0 +1,15 @@
+artifact_uri: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab12/mlruns/108620659345105528/df9a858a12f84d3aace382da3cb4df29/artifacts
+deleted_time: 1780953587622
+end_time: 1780950691837
+entry_point_name: ''
+experiment_id: '108620659345105528'
+lifecycle_stage: deleted
+run_id: df9a858a12f84d3aace382da3cb4df29
+run_name: grouping_naive_seed123
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780949859446
+status: 3
+tags: []
+user_id: mikol

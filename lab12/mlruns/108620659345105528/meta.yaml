@@ -1,0 +1,9 @@
+artifact_location: /home/mikol/ai_studies/Deep-Neural-Networks-PWR/lab12/mlruns/108620659345105528
+creation_time: 1780908762641
+effective_trace_archival_retention: null
+experiment_id: '108620659345105528'
+last_update_time: 1780908762641
+lifecycle_stage: active
+name: GQA_InsectWingbeat
+trace_location: null
+workspace: default
