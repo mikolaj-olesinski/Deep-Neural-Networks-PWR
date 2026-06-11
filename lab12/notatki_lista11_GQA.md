@@ -45,11 +45,7 @@ graph TD
     end
 ```
 
-| Wariant | Zestawy K,V | Jakość | Przykłady |
-|---------|-------------|--------|-----------|
-| MHA (G=H) | H | najlepsza | BERT, GPT-2 |
-| GQA (1<G<H) | G | zbliżona do MHA | LLaMA 3, Mistral |
-| MQA (G=1) | 1 | niższa | PaLM |
+
 
 **Q zawsze jest niezależne** dla każdej głowicy — każda zadaje inne pytanie. K i V są dzielone wewnątrz grupy. Redukcja parametrów jest dokładnie proporcjonalna do G/H.
 
@@ -94,11 +90,11 @@ Model z lab 10: 3 × TransformerEncoderLayer (H=8), positional embedding, token 
 
 Porównanie MHA vs GQA dla G ∈ {1, 2, 4, 8}.
 
-| Co mierzę | Jak mierzę |
-|-----------|------------|
-| Accuracy (test set) | standardowa klasyfikacja |
-| Liczba parametrów | `sum(p.numel() for p in model.parameters())` |
-| Zużycie RAM | `torch.cuda.memory_allocated()` |
+| Co mierzę          | Jak mierzę                                    |
+| ------------------- | ---------------------------------------------- |
+| Accuracy (test set) | standardowa klasyfikacja                       |
+| Liczba parametrów  | `sum(p.numel() for p in model.parameters())` |
+| Zużycie RAM        | `torch.cuda.memory_allocated()`              |
 
 Każdy wariant powtórzony z 3 seedami. Główny wynik: krzywa accuracy vs G.
 
@@ -108,11 +104,11 @@ Każdy wariant powtórzony z 3 seedami. Główny wynik: krzywa accuracy vs G.
 
 Przy G=2 (4 głowice w 2 grupach) porównanie różnych sposobów przydziału głowic:
 
-| Strategia | Grupy |
-|-----------|-------|
+| Strategia           | Grupy                        |
+| ------------------- | ---------------------------- |
 | Naiwna (sąsiednie) | {Q1,Q2} → K1, {Q3,Q4} → K2 |
-| Losowa | {Q1,Q3} → K1, {Q2,Q4} → K2 |
-| Odwrotna | {Q1,Q4} → K1, {Q2,Q3} → K2 |
+| Losowa              | {Q1,Q3} → K1, {Q2,Q4} → K2 |
+| Odwrotna            | {Q1,Q4} → K1, {Q2,Q3} → K2 |
 
 Jeśli accuracy różni się między strategiami — które głowice grupujemy razem ma znaczenie (potwierdzenie obserwacji z AsymGQA).
 
@@ -134,13 +130,13 @@ Mierzę: accuracy dla każdej kombinacji. Spodziewam się że różnica MHA vs G
 
 Zamiast redukować wszystkie warstwy jednakowo, GQA tylko w wybranych warstwach:
 
-| Wariant | Warstwy |
-|---------|---------|
-| All-MHA | MHA, MHA, MHA |
-| Last-GQA | MHA, MHA, GQA |
-| Mid-GQA | MHA, GQA, MHA |
+| Wariant   | Warstwy       |
+| --------- | ------------- |
+| All-MHA   | MHA, MHA, MHA |
+| Last-GQA  | MHA, MHA, GQA |
+| Mid-GQA   | MHA, GQA, MHA |
 | First-GQA | GQA, MHA, MHA |
-| All-GQA | GQA, GQA, GQA |
+| All-GQA   | GQA, GQA, GQA |
 
 Pytanie: czy ostatnia warstwa (bezpośrednio przed klasyfikacją) jest bardziej wrażliwa na redukcję K,V niż pierwsza?
 
@@ -149,6 +145,7 @@ Pytanie: czy ostatnia warstwa (bezpośrednio przed klasyfikacją) jest bardziej 
 ### Eksperyment 5 — krzywa zbieżności
 
 Dla każdej wartości G rysować accuracy na zbiorze testowym po każdej epoce. Sprawdzić czy GQA:
+
 - zbiega wolniej ale dobija do tej samej końcowej accuracy
 - czy od razu odbiega od MHA i zostaje niżej
 
